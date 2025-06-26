@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hritik Kumar | Portfolio</title>
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        margin: 0;
+        background: #f0f4f8;
+        color: #222;
+        transition: background 0.3s, color 0.3s;
+      }
+      .dark-mode {
+        background: #121212;
+        color: #f0f4f8;
+      }
+      header {
+        background: linear-gradient(135deg, #1e293b, #334155);
+        color: white;
+        padding: 2.5rem 1rem;
+        text-align: center;
+      }
+      header h1 {
+        margin: 0;
+        font-size: 3rem;
+      }
+      header p {
+        font-size: 1.3rem;
+      }
+      nav {
+        background: #334155;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 1rem;
+      }
+      nav a {
+        color: white;
+        margin: 0 1rem;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      nav a:hover {
+        text-decoration: underline;
+      }
+      .toggle-btn {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        background: #1e293b;
+        color: white;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 999;
+      }
+      section {
+        padding: 2rem;
+        max-width: 1100px;
+        margin: auto;
+      }
+      h2 {
+        color: #1e293b;
+      }
+      .dark-mode h2 {
+        color: #90cdf4;
+      }
+      .skills,
+      .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+      }
+      .card {
+        background: white;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+      .dark-mode .card {
+        background: #2e2e2e;
+      }
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+      }
+      .contact-form input,
+      .contact-form textarea {
+        margin-bottom: 1rem;
+        padding: 0.8rem;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .contact-form button {
+        background: #1e293b;
+        color: white;
+        padding: 0.8rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      footer {
+        text-align: center;
+        padding: 1rem;
+        background: #e2e8f0;
+      }
+      .dark-mode footer {
+        background: #2a2a2a;
+      }
+      footer a {
+        color: #1e40af;
+        margin: 0 0.5rem;
+        text-decoration: none;
+      }
+      .dark-mode footer a {
+        color: #60a5fa;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="toggle-btn" onclick="toggleDarkMode()">
+      Toggle Dark Mode
+    </button>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <header>
+      <h1>Hritik Kumar</h1>
+      <p>Full Stack Web Developer</p>
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a passionate B.Tech CSE student with strong skills in full-stack
+        development. I love crafting seamless user experiences and working with
+        the latest technologies to build impactful digital solutions.
+      </p>
+      <p>
+        Additionally, I have a strong command over Data Structures and
+        Algorithms. I regularly solve competitive programming problems on
+        platforms like LeetCode, Codeforces, and Coding Ninjas. With over 400+
+        questions solved on LeetCode, a 3-star rating on Codeforces, and an
+        Excellent rating on Coding Ninjas, I continuously hone my
+        problem-solving skills and stay updated with algorithmic challenges.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="card">
+          <strong>Programming Languages</strong><br />HTML, CSS, Java,
+          JavaScript, C, C++, Python
+        </div>
+        <div class="card">
+          <strong>Libraries/Frameworks</strong><br />React, Redux, Redux
+          Toolkit, Bootstrap, Tailwind, Node.js, Express.js
+        </div>
+        <div class="card">
+          <strong>Tools</strong><br />Git, GitHub, MongoDB, Firebase, Vite,
+          Webpack, OpenAI (ChatGPT)
+        </div>
+        <div class="card">
+          <strong>Technical Skills</strong><br />Full Stack Web Development,
+          Data Structures and Algorithm
+        </div>
+        <div class="card">
+          <strong>Soft Skills</strong><br />Communication, Problem Solving, Team
+          Management, Adaptability
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="card">
+          <h3>ChatEase</h3>
+          <p>
+            A real-time messaging app inspired by WhatsApp. Built using React,
+            Node.js, Firebase, and Socket.IO for instant communication.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Personal Blog</h3>
+          <p>
+            Full-stack blog platform with React frontend and MongoDB backend,
+            allowing users to create, edit, and publish blog posts.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <p>
+        <a href="file:///C:/Users/hriti/Downloads/resume.pdf" download
+          >Download Resume</a
+        >
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>
+        &copy; 2025 Hritik Kumar |
+        <a href="https://github.com/hritik14322" target="_blank">GitHub</a> |
+        <a
+          href="https://www.linkedin.com/in/hritik-kumar-a7860a256/"
+          target="_blank"
+          >LinkedIn</a
+        >
+      </p>
+    </footer>
+
+    <script>
+      function toggleDarkMode() {
+        document.body.classList.toggle("dark-mode");
+      }
+    </script>
+  </body>
+</html>
